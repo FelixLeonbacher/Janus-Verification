@@ -1,5 +1,5 @@
 robot:
-  url: ws://192.168.0.10:8080   # Adresse des Roboter-Servers
+  url: ws://10.0.0.20:5000   # Adresse des Roboter-Servers
   connect_timeout: 5.0          # s, pro Verbindungsversuch
   read_timeout: 10.0            # s, Standard-Timeout für read()
   connect_retries: 3            # Versuche beim Verbinden
