@@ -1,0 +1,146 @@
+# =========================================================
+# ROS / ROS 2 workspace
+# =========================================================
+# colcon (ROS 2)
+build/
+install/
+log/
+
+# catkin (ROS 1)
+devel/
+devel_isolated/
+build_isolated/
+install_isolated/
+logs/
+.catkin_workspace
+.catkin_tools/
+CATKIN_IGNORE
+COLCON_IGNORE
+
+# rosbags & runtime data
+*.bag
+*.db3
+*.db3-shm
+*.db3-wal
+*.mcap
+rosbag2_*/
+*.orig
+
+# =========================================================
+# C / C++
+# =========================================================
+# Object files & libraries
+*.o
+*.obj
+*.ko
+*.elf
+*.a
+*.lib
+*.la
+*.lo
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+cmake-build-*/
+compile_commands.json
+Makefile.user
+
+# Clangd / ccache
+.cache/
+.clangd/
+.ccache/
+
+# =========================================================
+# Python
+# =========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+dist/
+wheels/
+pip-wheel-metadata/
+.installed.cfg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Testing / coverage
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Type checkers / linters
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# =========================================================
+# VS Code
+# =========================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/c_cpp_properties.json
+*.code-workspace
+.history/
+
+# =========================================================
+# OS / Editor junk
+# =========================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+*.swo
+*.tmp
+*.log
+
+# =========================================================
+# Secrets / local config
+# =========================================================
+.env
+.env.*
+!.env.example
