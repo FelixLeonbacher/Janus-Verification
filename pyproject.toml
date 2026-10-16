@@ -1,0 +1,2 @@
+pip install pyrealsense2 opencv-python numpy pyyaml
+pip install websockets

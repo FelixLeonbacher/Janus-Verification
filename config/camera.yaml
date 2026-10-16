@@ -1,0 +1,7 @@
+camera:
+  width: 1280         # D435: Farbe + Tiefe gemeinsam bis 1280x720
+  height: 720
+  fps: 30
+  depth: true         # Tiefenbild mit aufnehmen (auf Farbbild ausgerichtet)
+  warmup_frames: 30   # Auto-Belichtung einschwingen lassen
+  serial: null        # nur nötig, wenn mehrere RealSense angeschlossen sind
