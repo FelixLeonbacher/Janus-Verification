@@ -1,3 +1,12 @@
 from .connection import RobotConfig, RobotConnection, RobotConnectionError
+from .robot import Pose, Robot, RobotError, Status
 
-__all__ = ["RobotConfig", "RobotConnection", "RobotConnectionError"]
+__all__ = [
+    "Pose",
+    "Robot",
+    "RobotConfig",
+    "RobotConnection",
+    "RobotConnectionError",
+    "RobotError",
+    "Status",
+]
