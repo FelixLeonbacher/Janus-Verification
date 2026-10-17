@@ -1,0 +1,24 @@
+reconstruction:
+  # Flansch (tool0) → Kamera (optisches Zentrum der Farbkamera)
+  # translation in Metern, quaternion (w, x, y, z)
+  # Erstmal am Halter grob ausmessen, später durch Hand-Eye-Kalibrierung ersetzen!
+  T_flange_camera:
+    translation: [0.0, 0.0, 0.05]
+    quaternion: [1.0, 0.0, 0.0, 0.0]
+
+  # Tiefenbereich, der überhaupt verwendet wird (m)
+  depth_min: 0.2
+  depth_max: 1.0
+
+  # Arbeitsbereich in Roboterbasis-Koordinaten (m) – alles außerhalb fliegt raus
+  crop_min: [0.15, -0.30, -0.10]
+  crop_max: [0.65,  0.30,  0.40]
+
+  remove_plane: true         # größte Ebene entfernen (Tisch)
+  plane_distance: 0.003      # m, Toleranz für die Ebene
+
+  voxel_size: 0.002          # m, Auflösung der fertigen Punktwolke
+  refine_icp: false          # true = Ansichten per ICP feinjustieren (nur wenn sie sichtbar versetzt sind)
+  icp_max_distance: 0.005    # m
+  outlier_neighbors: 20
+  outlier_std_ratio: 2.0

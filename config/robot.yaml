@@ -1,8 +1,6 @@
 robot:
-  url: ws://10.0.0.20:5000   # Adresse des Roboter-Servers
-  connect_timeout: 5.0          # s, pro Verbindungsversuch
-  read_timeout: 10.0            # s, Standard-Timeout für read()
-  connect_retries: 3            # Versuche beim Verbinden
-  retry_delay: 2.0              # s zwischen den Versuchen
-  ping_interval: 20.0           # s, Keepalive-Ping; null = aus (falls der Server keine Pings kann)
-  ping_timeout: 20.0            # s, ohne Pong → Verbindung gilt als tot
+  host: 10.0.0.20       # IP des Roboters
+  port: 5000
+  connect_timeout: 5.0  # s
+  read_timeout: 5.0     # s, für POS / RESET / QUIT
+  move_timeout: 120.0   # s, für NEXT (Antwort kommt erst, wenn der Roboter steht)
